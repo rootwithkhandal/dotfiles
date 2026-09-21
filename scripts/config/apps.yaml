@@ -1,0 +1,227 @@
+dependencies:
+  - build-essential
+  - git
+  - curl
+  - wget
+  - fuse
+  - libfuse2
+  - dunst
+# Removed: libnautilus-extension1a (not available)
+  - arp-scan
+  - python3
+  - python3-pip
+  - python3-venv
+  - python3-requests
+  - python3-setuptools
+  - python3-dev
+  - python3-dnspython
+  - python3-dns
+# Removed: python3-nautilus (not available)
+  - python3-gi
+# Removed: nautilus-python (not available)
+# Removed: nautilus-data (not available)
+# Removed: nautilus-admin (not available)
+# Removed: nautilus-image-converter (not available)
+  - imagemagick
+  - battery-stats
+  - git-delta
+  - ffmpeg
+  - pipx
+  - binutils-gold
+  - gcc
+  - libcurl4-openssl-dev
+  - libedit-dev
+  - libicu-dev
+  - libncurses-dev
+  - libpython3-dev
+  - libsqlite3-dev
+  - libxml2-dev
+  - pkg-config
+  - tzdata
+  - uuid-dev
+  - cmatrix
+# Removed: gotop (use btop instead)
+  - autojump
+  - sysstat
+  - ifstat
+  - net-tools
+  - iftop
+# Removed: nmtui (use network-manager)
+  - speedtest-cli
+# Removed: speed (not a real package)
+  - sd
+  - taskwarrior
+# Removed: tee (built-in command)
+  - ruby-dev
+  - ruby-full
+  - x11-xserver-utils  # Replaces xrandr
+  - xdotool
+  - xclip
+  - xsel
+  - devilspie2
+  - fonts-font-awesome
+# Removed: appmenu-gtk-module-common (not available)
+  - libdbusmenu-gtk3-4
+  - libdbusmenu-qt5-2
+# Removed: vala-panel-appmenu (not available)
+# Removed: appmenu-qt5 (not available)
+  - poppler-utils
+  - awscli
+
+applications:
+  editors:
+    - neovim
+    - nano
+  
+  terminals:
+    - tmux
+  
+  languages:
+    - golang
+    - rust-all
+    - python3
+    - nodejs
+    - npm
+    - ruby-dev
+    - ruby-full
+  
+  system_tools:
+    - htop
+    - btop
+    # - neofetch
+    - screenfetch
+    - ranger
+    - fzf
+    - fd-find
+    - ripgrep
+    - eza
+    - zoxide
+    - direnv
+    - thefuck
+    - jq
+    - asciinema
+    - 7zip
+    - gnome-system-monitor
+    - gnome-terminal
+    - gnome-screenshot
+  
+  network_tools:
+    - nmap
+    - wireshark
+    - tshark
+    - tcpdump
+    - openvpn
+    - tor
+    - proxychains4
+    - traceroute
+    - arp-scan
+    - netdiscover
+    - network-manager-gnome
+    - curl
+    - wget
+    - lynx
+  
+  security_tools:
+    - hydra
+    - john
+    - hashcat
+    - aircrack-ng
+    - sqlmap
+    - nikto
+    - gobuster
+    - dirb
+    - feroxbuster
+    - wfuzz
+    - burpsuite
+    - metasploit-framework
+    - zenmap
+    - openvas
+    - crunch
+    - hash-identifier
+    - dnsenum
+    - enum4linux
+    - smbclient
+    - smbmap
+    - crackmapexec
+    - bloodhound
+    - neo4j
+    - seclists
+    - cisco-auditing-tool
+    - apktool
+    - apkinfo
+    - macchanger
+  
+  media:
+    - gimp
+    - audacity
+    - vlc
+  
+  browsers:
+    - chromium
+  
+  firewall:
+    - ufw
+  
+  desktop:
+    - polybar
+
+flatpak_apps:
+  # - com.spotify.Client
+  - org.telegram.desktop
+  - com.discordapp.Discord
+  # - org.videolan.VLC
+  # - org.gimp.GIMP
+  - org.zaproxy.ZAP
+  - io.podman_desktop.PodmanDesktop
+  - com.github.tchx84.Flatseal
+  - io.github.flattool.Warehouse
+  - org.gnome.Logs
+  - org.gnome.font-viewer
+  - com.github.xournalpp.xournalpp
+  - com.obsproject.Studio
+  # - com.signal.Signal-Desktop
+  - com.getpostman.Postman
+  - io.github.zen_browser.zen
+  - com.todoist.Todoist
+  - md.obsidian.Obsidian
+  - org.angryip.ipscan
+  - io.emeric.toolblex
+  # - com.github.flathub.Flathub-Slack
+
+custom_installers:
+  zed:
+    enabled: true
+    url: "https://zed.dev/install.sh"
+  
+  wezterm:
+    enabled: true
+    type: "apt_repo"
+    key_url: "https://apt.fury.io/wez/gpg.key"
+    repo: "deb [signed-by=/etc/apt/keyrings/wezterm.gpg] https://apt.fury.io/wez/ * *"
+    package: "wezterm"
+  
+  brave:
+    enabled: true
+    url: "https://dl.brave.com/install.sh"
+  
+  spotify:
+    enabled: false  # Using flatpak version
+  
+  sublime:
+    enabled: false
+    type: "apt_repo"
+    key_url: "https://download.sublimetext.com/sublimehq-pub.gpg"
+    repo: "deb [signed-by=/etc/apt/keyrings/sublime.gpg] https://download.sublimetext.com/ apt/stable/"
+    package: "sublime-text"
+  
+  ngrok:
+    enabled: true
+    type: "apt_repo"
+    key_url: "https://ngrok-agent.s3.amazonaws.com/ngrok.asc"
+    repo: "deb [signed-by=/etc/apt/keyrings/ngrok.gpg] https://ngrok-agent.s3.amazonaws.com buster main"
+    package: "ngrok"
+  
+  bbht:
+    enabled: true
+    type: "manual"
+    notes: "Bug bounty hunting tools - install manually as needed"

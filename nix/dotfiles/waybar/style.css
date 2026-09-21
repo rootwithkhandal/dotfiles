@@ -1,0 +1,151 @@
+@import "colors/hackthebox.css";
+
+* {
+  all: unset;
+  font-family: "Iosevka Nerd Font Propo","JetBrains Mono", "Font Awesome 6 Free", sans-serif;
+  font-size: 14px;
+}
+
+window#waybar {
+  background-color: rgba(17, 17, 27, 0.92);
+  color: #a4b1cd;
+}
+
+#workspaces {
+  min-width: 100px;
+  font-size: 0.4rem;
+  padding: 2px 4px;
+  margin: 11px 0;
+  border-radius: 99px;
+}
+
+#workspaces button {
+  padding: 0 10px;
+  color: #313244;
+  background-color: transparent;
+  margin: 0 2px;
+  border-radius: 99px;
+  min-width: 4px;
+}
+
+#workspaces button.active {
+  /* color: #a6e3a1; */
+  color: #cba6f7;
+  /* background: #313244; */
+  border-radius: 8px;
+  min-width: 1.2rem;
+  font-weight: 800;
+  transition: all 200ms ease-in-out;
+}
+
+#workspaces button:hover {
+  color: #cba6f7;
+}
+
+#window {
+  color: #bac2de;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#clock,
+#clock#right {
+  color: #89b4fa;
+  margin: 0 15px;
+  font-weight: 700;
+  font-size: 1rem;
+
+}
+
+#network {
+  color:#a4b1cd;
+  /* color: #a6e3a1; */
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+#pulseaudio {
+  color: #a4b1cd;
+  /* color: #cba6f7; */
+  font-weight: 500;
+  font-size: 14px;
+  margin: 6 10px;
+}
+
+#custom-nix {
+  color: #89b4fa;
+  padding: 1px 2px;
+  margin: 0 5px;
+  transition: all 0.2s ease;
+  font-size: 20px;
+}
+
+#custom-nix:hover {
+  color: #cba6f7;
+}
+
+#custom-nix:active {
+  color: #cba6f7;
+}
+
+#custom-search {
+  font-family: "JetBrains Mono", "Font Awesome 6 Free", sans-serif;
+  color: #a4b1cd;
+  padding: 1px 2px;
+  margin: 0 5px;
+  transition: all 0.2s ease;
+  font-size: 20px;
+}
+
+#custom-search:hover {
+  color: #cba6f7;
+}
+
+#custom-search:active {
+  color: #cba6f7;
+}
+
+#custom-settings {
+  color: #a4b1cd;
+  padding: 1px 2px;
+  margin: 0 5px;
+  transition: all 0.2s ease;
+  font-size: 20px;
+}
+
+#custom-settings:hover {
+  color: #cba6f7;
+}
+
+#custom-settings:active {
+  color: #cba6f7;
+}
+
+#battery {
+  color: #a4b1cd;
+  /* color: #f9e2af; */
+  margin: 6 10px;
+  font-size: 14px;
+
+}
+
+#battery.warning {
+  color: #ffaf03;
+}
+
+#battery.critical {
+  color: #f38ba8;
+}
+
+#network:hover, #pulseaudio:hover, #battery:hover {
+  color: #89b4fa;
+}
+
+.modules-left {
+  margin-left: 14px;
+}
+
+.modules-right {
+  margin-right: 14px;
+}

@@ -1,0 +1,181 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.productIconTheme": "macos-modern",
+    "workbench.statusBar.visible": false,
+    "workbench.tips.enabled": false,
+    "workbench.tree.enableStickyScroll": true,
+    "workbench.sideBar.location": "right",
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.closeEmptyGroups": false,
+    "workbench.layoutControl.enabled": true,
+    "workbench.tree.indent": 14,
+    "workbench.tree.renderIndentGuides": "onHover",
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "workbench.list.multiSelectModifier": "alt",
+    "workbench.startupEditor": "none",
+    "workbench.commandPalette.experimental.enableNaturalLanguageSearch": true,
+    "workbench.commandPalette.experimental.suggestCommands": false,
+    "window.menuBarVisibility": "toggle",
+    "window.titleSeparator": " | ",
+    "window.autoDetectHighContrast": false,
+    "window.newWindowProfile": "Default",
+    "workbench.editor.empty.hint": "hidden",
+    "files.autoSave": "afterDelay",
+    "security.workspace.trust.untrustedFiles": "open",
+    // ================================
+    // ✍️ EDITOR BEHAVIOR & AESTHETICS
+    // ================================
+    "editor.fontFamily": "SF Mono,JetBrainsMono Nerd Font,Consolas,'Courier New',monospace",
+    "editor.fontSize": 18,
+    "editor.lineHeight": 26,
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "500",
+    "editor.wordWrap": "on",
+    "editor.smoothScrolling": true,
+    "editor.mouseWheelZoom": true,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.minimap.enabled": false,
+    "editor.guides.indentation": true,
+    "editor.guides.highlightActiveIndentation": false,
+    "editor.matchBrackets": "never",
+    "editor.renderLineHighlight": "none",
+    "editor.parameterHints.enabled": false,
+    "editor.inlayHints.enabled": "off",
+    "editor.inlineSuggest.enabled": true,
+    "editor.linkedEditing": true,
+    "editor.codeLens": false,
+    "editor.glyphMargin": false,
+    "editor.foldingHighlight": false,
+    "editor.lineNumbers": "on",
+    "editor.multiCursorModifier": "alt",
+    "editor.multiCursorMergeOverlapping": false,
+    "editor.padding.top": 14,
+    "editor.padding.bottom": 14,
+    "editor.formatOnPaste": true,
+    "breadcrumbs.enabled": true,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 10,
+    "editor.scrollbar.horizontalScrollbarSize": 10,
+    "editor.overviewRulerBorder": true,
+    "editor.wordBasedSuggestions": "matchingDocuments",
+    // ================================
+    // 🖥️ TERMINAL
+    // ================================
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.enableImages": true,
+    "terminal.integrated.fontFamily": "SF Mono, 'Hack Nerd Font'",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.cursorStyleInactive": "underline",
+    "terminal.integrated.cursorWidth": 2,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.lineHeight": 1,
+    "terminal.integrated.autoReplies": {
+        "Terminate batch job (Y/N)": "Y\r",
+        "Terminate batch job (Y/n)": "Y\r"
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    // ================================
+    // 🐍 LANGUAGE-SPECIFIC SETTINGS
+    // ================================
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+        },
+        "editor.rulers": [
+            {
+                "column": 72,
+                "color": "#684e4e"
+            },
+            {
+                "column": 79,
+                "color": "#4b5c59"
+            }
+        ]
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "yaml.schemas": {
+        "file:///home/krypto/.vscode/extensions/continue.continue-1.2.2-linux-x64/config-yaml-schema.json": [
+            ".continue/**/*.yaml"
+        ]
+    },
+    // ================================
+    // 🧩 EXTENSIONS & SOURCE CONTROL
+    // ================================
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.decorations.enabled": false,
+    "scm.defaultViewMode": "tree",
+    "explorer.autoReveal": false,
+    "explorer.compactFolders": false,
+    "explorer.openEditors.visible": 1,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmPasteNative": false,
+    "explorer.confirmDelete": false,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "Cargo.toml": "Cargo.lock",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*"
+    },
+    // ================================
+    // ⚙️ DEVELOPMENT & SECURITY
+    // ================================
+    "bashIde.explainshellEndpoint": "http://localhost:5000",
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path-linux": "/home/kpriyansh/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vscode-kubernetes.kubectl-path-linux": "/home/kpriyansh/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+        "vscode-kubernetes.minikube-path-linux": "/home/kpriyansh/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+    },
+    "remote.defaultExtensionsIfInstalledLocally": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "GitHub.vscode-pull-request-github"
+    ],
+    "cSpell.userWords": [
+        "burpsuite",
+        "hashlib",
+        "mainfile",
+        "psutil",
+        "pynput",
+        "raddr",
+        "thunar"
+    ],
+    // ================================
+    // 🔮 EXPERIMENTAL & COSMETICS
+    // ================================
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 1,
+    "indentRainbow.colors": [
+        "rgba(255,255,64,0.3)",
+        "rgba(127,255,127,0.3)",
+        "rgba(255,127,255,0.3)",
+        "rgba(79,236,236,0.3)"
+    ],
+    "glassit.alpha": 255,
+    "resmon.show.cputemp": true,
+    "apc.stylesheet": {
+        ".quick-input-widget": {
+            "transform": "translateY(-50%) !important",
+            "top": "50% !important"
+        }
+    },
+    "database-client.autoSync": true,
+    "workbench.colorTheme": "One Dark Pro Night Flat",
+    "chat.viewSessions.orientation": "stacked"
+}
+

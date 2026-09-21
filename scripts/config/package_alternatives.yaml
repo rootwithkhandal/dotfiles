@@ -1,0 +1,63 @@
+# Package alternatives for different distributions
+# Use this file to map unavailable packages to their alternatives
+
+debian_ubuntu:
+  # Removed packages (not available or deprecated)
+  removed:
+    - libnautilus-extension1a  # Not needed for basic setup
+    - nautilus-python          # Not needed for basic setup
+    - nautilus-data            # Not needed for basic setup
+    - nautilus-admin           # Not needed for basic setup
+    - nautilus-image-converter # Not needed for basic setup
+    - gotop                    # Use btop instead
+    - nmtui                    # Use network-manager instead
+    - speed                    # Not a real package
+    - tee                      # Built-in command, not a package
+    - xrandr                   # Use x11-xserver-utils instead
+    - appmenu-gtk-module-common # Not available on all versions
+    - vala-panel-appmenu       # Not available on all versions
+    - appmenu-qt5              # Not available on all versions
+    - tytop                    # Typo or not available
+    - colorls                  # Ruby gem, not apt package
+    - menson                   # Typo or not available
+  
+  # Replacements
+  replacements:
+    neofetch: fastfetch        # neofetch is deprecated, use fastfetch
+    xrandr: x11-xserver-utils  # xrandr is part of this package
+    nmtui: network-manager     # nmtui is part of network-manager
+    gotop: btop                # btop is the modern alternative
+
+arch:
+  removed:
+    - libnautilus-extension1a
+    - nautilus-python
+    - speed
+    - tee
+    - appmenu-qt5
+    - tytop
+    - colorls
+    - menson
+  
+  replacements:
+    neofetch: fastfetch
+
+fedora:
+  removed:
+    - libnautilus-extension1a
+    - nautilus-python
+    - speed
+    - tee
+    - appmenu-qt5
+    - tytop
+    - colorls
+    - menson
+  
+  replacements:
+    neofetch: fastfetch
+
+# Notes:
+# - neofetch is deprecated, use fastfetch or screenfetch
+# - colorls is a Ruby gem: gem install colorls
+# - tee is a built-in shell command
+# - Some GNOME/Nautilus extensions may not be available on all distros

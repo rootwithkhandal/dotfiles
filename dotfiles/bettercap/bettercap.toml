@@ -1,0 +1,5 @@
+api:
+  username = "admin"
+  password = "admin"
+  listen_address = "127.0.0.1"
+  listen_port = 8081

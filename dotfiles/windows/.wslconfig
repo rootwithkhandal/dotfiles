@@ -1,0 +1,9 @@
+[wsl2]
+memory=8GB              # Cap RAM usage (default: 50% of host RAM)
+processors=4            # Cap CPU core count
+swap=2GB
+localhostForwarding=true
+
+[experimental]
+autoMemoryReclaim=gradual   # Reclaim unused memory back to Windows
+sparseVhd=true              # Sparse virtual disk saves disk space

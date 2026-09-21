@@ -1,0 +1,15 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"CSV",
+		"Package Control",
+		"rainbow_csv",
+		"Sublime Files",
+		"Type Language Syntax",
+		"Yii2 Auto-complete",
+	],
+}

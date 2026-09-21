@@ -1,0 +1,77 @@
+{
+    "recommendations": [
+        // ================================
+        // 🧠 CORE PRODUCTIVITY
+        // ================================
+        "eamodio.gitlens", // Git superpowers
+        "github.copilot", // AI pair programmer
+        "github.copilot-chat",
+        "ms-vscode-remote.remote-ssh", // SSH remote dev
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode.remote-explorer",
+        "ms-vscode.remote-server",
+        "gruntfuggly.todo-tree", // Task and TODO tracking
+        "aaron-bond.better-comments", // Colorful comment annotations
+        "usernamehw.errorlens", // Inline error display
+        "wmaurer.change-case", // String transformation utilities
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.debugpy",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "esbenp.prettier-vscode", // Formatter for JS/TS/HTML/CSS
+        "dbaeumer.vscode-eslint", // Linting
+        "xabikos.javascriptsnippets",
+        "pranaygp.vscode-css-peek",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "zhuangtongfa.material-theme", // Optional modern UI theme
+        "juanblanco.solidity",
+        "nomicfoundation.hardhat-solidity",
+        "tintinweb.solidity-visual-auditor",
+        "tintinweb.vscode-solidity-flattener",
+        "tintinweb.vscode-solidity-metrics",
+        "tintinweb.vscode-security-auditor",
+        "infosec.vscode-nmap", // Nmap integration
+        "ms-azuretools.vscode-docker", // Container analysis
+        "muteki.vscode-pcap", // PCAP file viewer
+        "spmeesseman.vscode-taskexplorer", // Command/task inspector
+        "githyanki.debugtron", // Debug Electron apps
+        "kakumei.jsontools", // JSON manipulation
+        "sandcastle.vscode-open-in-burp", // Open files/URLs in Burp Suite
+        "vscode-icons-team.vscode-icons", // Consistent icon theme
+        "ms-vscode.powershell",
+        "ms-azuretools.vscode-azurefunctions",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "ms-vscode.azure-repos",
+        "ionutvmi.path-autocomplete",
+        "bencoleman.armview", // Azure ARM viewer
+        "elastic.elastic-vscode", // Elastic stack dev tools
+        "redhat.vscode-yaml", // YAML validation for configs
+        "foxundermoon.shell-format", // Format shell scripts
+        "golang.go",
+        "bmewburn.vscode-intelephense-client",
+        "rebornix.ruby",
+        "timonwong.shellcheck",
+        "mads-hartmann.bash-ide-vscode",
+        "shakram02.bash-beautify",
+        "ms-azuretools.vscode-docker",
+        "hashicorp.terraform", // For cloud infra
+        "redhat.vscode-yaml",
+        "oderwat.indent-rainbow",
+        "pkief.material-icon-theme",
+        "naumovs.color-highlight",
+        "akamud.vscode-theme-onedark",
+        "spywhere.guides",
+        "glassit.alpha", // Transparent window
+        "enkia.tokyo-night",
+        "catppuccin.catppuccin-vsc", // Your current theme
+        "ms-vscode.cpptools-extension-pack", // heavy C++ pack you don’t need
+        "ms-python.vscode-pylance" // optional if Copilot already handles completion
+    ],
+    "unwantedRecommendations": [
+        "ms-vscode.cmake-tools",
+        "vscode.git",
+    ]
+}

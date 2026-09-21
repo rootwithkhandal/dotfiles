@@ -1,0 +1,146 @@
+{
+    "layer": "top",
+    "width": 1800,
+    "modules-left": [
+        "custom/terminal",
+        "cava",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "clock",
+        "hyprland/workspaces",
+        "clock#right"
+    ],
+    "modules-right": [
+        // "cpu",
+        "network",
+        "pulseaudio",
+        "battery"
+    ],
+    "custom/terminal": {
+        "format": "<span size='20000'>󱄅</span>",
+        "tooltip": false,
+        "on-click": "kitty"
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "<span size='15000'>󰻠</span> {}%",
+        "max-length": 10
+    },
+    "network": {
+        // "interface": "wlp2s0",
+        "interface": "wlo1",
+        "format": "{ifname}",
+        "format-wifi": " {essid}",
+        "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
+    "battery": {
+        // "bat": "BAT2",
+        "interval": 60,
+        "format": "<span size='14000'>{icon}</span> {capacity}%",
+        "format-icons": {
+            "default": [
+                "󰂎",
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ],
+            "charging": [
+                "󰢟",
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ]
+        }
+    },
+    "clock": {
+        "format": "{:%H}"
+    },
+    "clock#right": {
+        "format": "{:%M}"
+    },
+    "hyprland/workspaces": {
+        "format": "<span size='15000'>{icon}</span>",
+        "format-icons": {
+            "1": "󰊠",
+            "2": "󰊠",
+            "3": "󰊠",
+            "4": "󰊠",
+            "5": "󰊠",
+            "6": "󰊠",
+            "7": "󰊠",
+            "8": "󰊠",
+            "9": "󰊠",
+            "10": "󰊠",
+            "active": "󰮯",
+            "default": "󰊠"
+        }
+    },
+    // "hyprland/workspaces": {
+    //     "format": "{icon}",
+    //     "format-window-separator": "",
+    //     "workspace-taskbar": {
+    //         "enable": true,
+    //         "update-active-window": true,
+    //         "format": "{icon} {title:.22}",
+    //         "icon-size": 18,
+    //         "on-click-window": "/home/.config/waybar/scripts/focus-window.sh {address} {button}"
+    //     },
+    //     "default": "󰊠",
+    //     "active": "󰮯"
+    // },
+    "pulseaudio": {
+        "format": "<span size='15000'>{icon}</span> {volume}",
+        "format-bluetooth": "<span size='14000'></span>",
+        "format-muted": "󰝟",
+        "format-icons": {
+            // "alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+            // "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "",
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "phone-muted": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "󰖀",
+                "󰕾"
+            ]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ]
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "rewrite": {
+            "(.*) - Visual Studio Code": "StudioCode",
+            "(.*) - Mozilla Firefox": "Firefox",
+            "(.*) — Mozilla Firefox": "Firefox"
+        },
+        "separate-outputs": true
+    }
+}

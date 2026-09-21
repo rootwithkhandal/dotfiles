@@ -1,0 +1,102 @@
+* {
+    all: unset;
+    /* font-family: "Iosevka Nerd Font Propo";  */
+    font-family: "JetBrainsMono NFP"; 
+    font-size: 16px;
+}
+
+window#waybar {
+    background-color: black;
+    color: aliceblue;
+    border-radius: 0 0 10px 10px;
+}
+
+#workspaces {
+    /* background-color: bisque; */
+    min-width: 100px;
+    font-size: 32px;
+    padding: 2px 4px;
+    margin: 5px 0;
+    /* border-radius: 99px; */
+}
+
+#workspaces button {
+    /* background-color: gray; */
+    /* color: transparent; */
+    padding: 0px 5px;
+    font-size: 32px;
+    /* padding-top: 3px; */
+    /* padding-bottom: 3px; */
+    /* border-radius: 99px; */
+    margin: 0 2px;
+    min-width: 4px;
+}
+
+#workspaces button.active {
+    /* background-color: blueviolet; */
+    transition: all 200ms ease-in-out;
+    min-width: 1.2rem;
+}
+
+#battery {
+    /* font-size: 1rem; */
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    /* background-color: pink; */
+
+}
+
+#window {
+    /* background-color: grey; */
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#clock,
+#clock#right {
+    margin: 0 15px;
+    font-weight: 700;
+    /* background-color: aqua; */
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.modules-right {
+    margin-right: 12px;
+}
+
+.modules-left {
+    margin-left: 12px;
+}
+
+#pulseaudio {
+    /* background-color: pink; */
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#network {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px
+
+}
+
+#cpu {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px
+}

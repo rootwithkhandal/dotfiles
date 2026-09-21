@@ -1,0 +1,12 @@
+{
+    "servers": {
+        "github": {
+            "url": "https://api.githubcopilot.com/mcp/",
+            "type": "http"
+        },
+        "huggingface": {
+            "url": "https://hf.co/mcp"
+        }
+    },
+    "inputs": []
+}

@@ -1,0 +1,339 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "initialCols": 104,
+    "confirmCloseAllTabs": true,
+    "trimBlockSelection": true,
+    "trimPaste": true,
+    "wordDelimiters": " /\\()\"'-.,:;<>~!@#$%^&*|+=[]{}~?\u2502",
+    "newTabMenu": [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "actions": [
+        {
+            "command": {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy",
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitAuto",
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "horizontal",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitH",
+            "keys": "alt+shift+minus"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "vertical",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitV",
+            "keys": "alt+shift+plus"
+        },
+        {
+            "command": "closePane",
+            "id": "User.closePane",
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "command": {
+                "action": "moveFocus",
+                "direction": "left"
+            },
+            "id": "User.focusLeft",
+            "keys": "alt+left"
+        },
+        {
+            "command": {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "id": "User.focusRight",
+            "keys": "alt+right"
+        },
+        {
+            "command": {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "id": "User.focusUp",
+            "keys": "alt+up"
+        },
+        {
+            "command": {
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "id": "User.focusDown",
+            "keys": "alt+down"
+        },
+        {
+            "command": {
+                "action": "resizePane",
+                "direction": "left"
+            },
+            "id": "User.resizeLeft",
+            "keys": "alt+shift+left"
+        },
+        {
+            "command": {
+                "action": "resizePane",
+                "direction": "right"
+            },
+            "id": "User.resizeRight",
+            "keys": "alt+shift+right"
+        },
+        {
+            "command": {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "id": "User.resizeUp",
+            "keys": "alt+shift+up"
+        },
+        {
+            "command": {
+                "action": "resizePane",
+                "direction": "down"
+            },
+            "id": "User.resizeDown",
+            "keys": "alt+shift+down"
+        },
+        {
+            "command": "togglePaneZoom",
+            "id": "User.zoomPane",
+            "keys": "ctrl+shift+enter"
+        },
+        {
+            "command": {
+                "action": "nextTab"
+            },
+            "id": "User.nextTab",
+            "keys": "ctrl+tab"
+        },
+        {
+            "command": {
+                "action": "prevTab"
+            },
+            "id": "User.prevTab",
+            "keys": "ctrl+shift+tab"
+        },
+        {
+            "command": {
+                "action": "switchToTab",
+                "index": 0
+            },
+            "id": "User.tab1",
+            "keys": "alt+1"
+        },
+        {
+            "command": {
+                "action": "switchToTab",
+                "index": 1
+            },
+            "id": "User.tab2",
+            "keys": "alt+2"
+        },
+        {
+            "command": {
+                "action": "switchToTab",
+                "index": 2
+            },
+            "id": "User.tab3",
+            "keys": "alt+3"
+        },
+        {
+            "command": {
+                "action": "switchToTab",
+                "index": 3
+            },
+            "id": "User.tab4",
+            "keys": "alt+4"
+        },
+        {
+            "command": {
+                "action": "switchToTab",
+                "index": 4
+            },
+            "id": "User.tab5",
+            "keys": "alt+5"
+        },
+        {
+            "command": {
+                "action": "adjustFontSize",
+                "delta": 2
+            },
+            "id": "User.fontUp",
+            "keys": "ctrl+plus"
+        },
+        {
+            "command": {
+                "action": "adjustFontSize",
+                "delta": -2
+            },
+            "id": "User.fontDown",
+            "keys": "ctrl+minus"
+        },
+        {
+            "command": "resetFontSize",
+            "id": "User.fontReset",
+            "keys": "ctrl+0"
+        },
+        {
+            "command": "commandPalette",
+            "id": "User.cmdPalette",
+            "keys": "ctrl+shift+p"
+        },
+        {
+            "command": "toggleFullscreen",
+            "id": "User.fullscreen",
+            "keys": "alt+enter"
+        }
+    ],
+    "profiles": {
+        "defaults": {
+            "colorScheme": "OneDarkProNightFlat",
+            "elevate": false,
+            "font": {
+                "face": "JetBrainsMono Nerd Font Mono",
+                "size": 12,
+                "weight": "normal"
+            },
+            "opacity": 80,
+            "useAcrylic": true,
+            "padding": "8, 8, 8, 8",
+            "antialiasingMode": "grayscale",
+            "cursorShape": "bar",
+            "scrollbarState": "hidden",
+            "bellStyle": "none",
+            "snapOnInput": true,
+            "historySize": 10000,
+            "closeOnExit": "graceful",
+            "adjustIndistinguishableColors": "indexed"
+        },
+        "list": [
+            {
+                "name": "PowerShell",
+                "hidden": false,
+                "colorScheme": "Campbell Powershell",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoLogo",
+                "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "colorScheme": "Campbell Powershell",
+                "hidden": false,
+                "name": "Powershell 7",
+                "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "name": "Commandline",
+                "hidden": false,
+                "colorScheme": "OneDarkProNightFlat",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "commandline": "%SystemRoot%\\System32\\cmd.exe /Q /D",
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{39ea5b63-20cf-5c9e-86c7-d103eee9e474}",
+                "hidden": false,
+                "name": "parrot",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+                "hidden": false,
+                "name": "kali-linux",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl"
+            }
+        ]
+    },
+    "schemes": [
+        {
+            "name": "OneDarkProNightFlat",
+            "background": "#23272E",
+            "foreground": "#ABB2BF",
+            "cursorColor": "#FFFDFD",
+            "selectionBackground": "#3A3F4B",
+            "black": "#1F2329",
+            "red": "#E06C75",
+            "green": "#98C379",
+            "yellow": "#D19A66",
+            "blue": "#61AFEF",
+            "purple": "#C678DD",
+            "cyan": "#56B6C2",
+            "white": "#ABB2BF",
+            "brightBlack": "#4B5263",
+            "brightRed": "#E06C75",
+            "brightGreen": "#98C379",
+            "brightYellow": "#E5C07B",
+            "brightBlue": "#61AFEF",
+            "brightPurple": "#C678DD",
+            "brightCyan": "#56B6C2",
+            "brightWhite": "#FFFFFF"
+        }
+    ],
+    "showAdminShield": true,
+    "showTabsFullscreen": false,
+    "showTabsInTitlebar": true,
+    "tabSwitcherMode": "inOrder",
+    "tabWidthMode": "equal",
+    "themes": [],
+    "useAcrylicInTabRow": true
+}

@@ -1,0 +1,37 @@
+theme = "Iceberg Dark"
+
+# Comments start with a `#` and are only valid on their own line.
+# Blank lines are ignored!
+
+# keybind = ctrl+n=toggle_quick_terminal
+keybind = shift+ctrl+z=close_surface
+keybind = shift+ctrl+l=new_split:right
+keybind = shift+ctrl+j=new_split:left
+keybind = shift+ctrl+k=new_split:down
+keybind = shift+ctrl+i=new_split:up
+keybind = shift+ctrl+n=new_window
+keybind = shift+ctrl+r=reload_config
+mouse-hide-while-typing = true
+
+#shell-integration-features = nocursor, sudo, no-title
+# 92x26
+# Empty values reset the configuration to the default value
+# font-family = "CaskaydiaMono Nerd Font"
+#font-family = "JetBrainsMonoNL Nerd Font Mono"
+font-size = "12"
+cursor-style = bar
+background-opacity = "0.95"
+
+window-padding-balance = true
+window-decoration = false
+window-padding-y = 10
+window-padding-x = 10
+window-colorspace = "display-p3"
+window-height = 26
+
+copy-on-select = clipboard
+#background-blur-radius = "20"
+window-width = 85
+#focus-follows-mouse = true
+bold-is-bright = true
+auto-update = download

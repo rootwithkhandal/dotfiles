@@ -1,0 +1,136 @@
+Windows Registry Editor Version 5.00 
+
+;For BAT files
+[HKEY_CLASSES_ROOT\batfile\shell\CopyContents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\batfile\shell\CopyContents\command]
+@="cmd /c clip < \"%1\""
+
+
+;For CMD files
+[HKEY_CLASSES_ROOT\cmdfile\shell\CopyContents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\cmdfile\shell\CopyContents\command]
+@="cmd /c clip < \"%1\""
+
+
+;For CSS files
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.css]
+"PerceivedType"="document"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.css\shell\Copy Contents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.css\shell\Copy Contents\command]
+@="cmd /c clip < \"%1\""
+
+
+;For HTML files
+[HKEY_CLASSES_ROOT\htmlfile\shell\CopyContents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\htmlfile\shell\CopyContents\command]
+@="cmd /c clip < \"%1\""
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.html\shell\CopyContents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.html\shell\CopyContents\command]
+@="cmd /c clip < \"%1\""
+
+
+;For JS files
+[HKEY_CLASSES_ROOT\JSFile\shell\CopyContents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\JSFile\shell\CopyContents\command]
+@="cmd /c clip < \"%1\""
+
+
+;For PS1 files
+[HKEY_CLASSES_ROOT\Microsoft.PowerShellScript.1\shell\CopyContents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\Microsoft.PowerShellScript.1\shell\CopyContents\command]
+@="cmd /c clip < \"%1\""
+
+
+;For REG files
+[HKEY_CLASSES_ROOT\regfile\shell\CopyContents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\regfile\shell\CopyContents\command]
+@="cmd /c clip < \"%1\""
+
+
+;For RTF files (Will not work for .rtf files if "Office Word" is the default app instead of "Wordpad")
+[HKEY_CLASSES_ROOT\rtffile\shell\CopyContents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\rtffile\shell\CopyContents\command]
+@="cmd /c clip < \"%1\""
+
+
+;For TXT and LOG files
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.txt\shell\CopyContents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.txt\shell\CopyContents\command]
+@="cmd /c clip < \"%1\""
+
+[HKEY_CLASSES_ROOT\textfile\shell\CopyContents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\textfile\shell\CopyContents\command]
+@="cmd /c clip < \"%1\""
+
+[HKEY_CLASSES_ROOT\txtfile\shell\CopyContents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\txtfile\shell\CopyContents\command]
+@="cmd /c clip < \"%1\""
+
+[HKEY_CLASSES_ROOT\txtfilelegacy\shell\CopyContents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\txtfilelegacy\shell\CopyContents\command]
+@="cmd /c clip < \"%1\""
+
+
+;For VBS files
+[HKEY_CLASSES_ROOT\VBSFile\shell\CopyContents]
+"Extended"=-
+"Icon"="DxpTaskSync.dll,-52"
+"MUIVerb"="Copy Contents to Clipboard"
+
+[HKEY_CLASSES_ROOT\VBSFile\shell\CopyContents\command]
+@="cmd /c clip < \"%1\""
+  

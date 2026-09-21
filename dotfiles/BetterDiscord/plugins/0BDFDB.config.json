@@ -1,0 +1,26 @@
+{
+	"all": {
+		"changeLogs": {
+			"BDFDB": "4.2.6",
+			"CustomStatusPresets": "1.3.2",
+			"ImageUtilities": "5.6.1",
+			"ReadAllNotificationsButton": "1.8.3",
+			"ServerDetails": "1.2.6",
+			"Translator": "2.7.6"
+		},
+		"choices": {
+			"toastPosition": "right"
+		},
+		"general": {
+			"shareData": true,
+			"showToasts": true,
+			"checkForUpdates": false,
+			"showSupportBadges": false,
+			"useChromium": false
+		},
+		"hashes": {
+			"0BDFDB.data.json": "5707887c156c4e6c4cb571339df74b6827299eea",
+			"0BDFDB.raw.css": "d0b50a89fc20f5eda9939f0aaf13664ed2b920d0"
+		}
+	}
+}

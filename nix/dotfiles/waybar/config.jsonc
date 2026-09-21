@@ -1,0 +1,138 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 16,
+  // "width":1000,
+
+  "modules-left": [
+    "custom/nix",
+    "custom/search",
+    // "cava",
+    "hyprland/window"
+  ],
+
+  "modules-center": [
+    "clock",
+    "hyprland/workspaces",
+    "clock#right"
+  ],
+
+  "modules-right": [
+    "network",
+    "pulseaudio",
+    "battery",
+    "custom/settings"
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "プ",
+      "2": "リ",
+      "3": "ヤ",
+      "4": "ン",
+      "5": "シ",
+      "6": "ュ"
+    },
+    "persistent-workspaces": {
+      "*": 6
+    }
+  },
+
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 60
+  },
+
+  "clock": {
+    // "format": "󰥔  {:%a %d %b  %H:%M}",
+    "format":"{:%H}"
+  },
+  "clock#right": {
+    // "format": "󰥔  {:%a %d %b  %H:%M}",
+    "format": "{:%M}"
+  },
+
+  "groups/network": {
+    "orientation": "horizontal",
+    "modules": [
+      "network",
+      "custom/vpn"
+    ]
+  },
+
+  "network": {
+    // "on-click": "",
+    "format-wifi": "   {ipaddr}",
+    "format-ethernet": "   {ipaddr}",
+    "format-disconnected": "󰖪   Offline",
+    "tooltip-format": "{ifname}: {ipaddr}"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " ",
+    "format-icons": {
+      "default": [
+        " ",
+        " ",
+        " ",
+        "  "
+      ]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "battery": {
+    // "bat": "BAT2",
+    "interval": 60,
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": " {capacity}%",
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "events": {
+      "on-discharging-warning": "notify-send -u normal 'Low Battery'",
+      "on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
+      "on-charging-100": "notify-send -u normal 'Battery Full!'",
+      "on-discharging": "notify-send -u normal 'Power Switch' Discharging",
+      "on-charging": "notify-send -u normal 'Power Switch' Charging'"
+    },
+    "format": "{icon} {capacity}%",
+    "format-icons": [
+      "󰂎 ", //0
+      "󰁺 ", //15
+      "󰁻 ", //25
+      "󰁾 ", //50
+      "󰂀 ", //75
+      "󰁹 "  //100
+    ],
+    "max-length": 25
+  },
+
+  "custom/nix": {
+    "format": " ",
+    "tooltip": true,
+    "tooltip-text": "Search applications",
+    "on-click": "kitty sudo nixos-rebuild switch --flake /etc/nixos#nixos"
+  },
+
+  "custom/search": {
+    "format": " ",
+    "tooltip": true,
+    "tooltip-text": "Search applications",
+    "on-click": "rofi -show drun"
+  },
+
+  "custom/settings": {
+    "format": " ",
+    "tooltip": true,
+    "tooltip-text": "Search applications",
+    "on-click": "rofi -show drun"
+  },
+
+  "tray": {
+    "spacing": 8
+  }
+}

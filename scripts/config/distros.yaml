@@ -1,0 +1,23 @@
+debian:
+  package_manager: apt
+  install_cmd: "apt install -y"
+  update_cmd: "apt update"
+  upgrade_cmd: "apt upgrade -y"
+  
+ubuntu:
+  package_manager: apt
+  install_cmd: "apt install -y"
+  update_cmd: "apt update"
+  upgrade_cmd: "apt upgrade -y"
+
+arch:
+  package_manager: pacman
+  install_cmd: "pacman -S --noconfirm"
+  update_cmd: "pacman -Sy"
+  upgrade_cmd: "pacman -Syu --noconfirm"
+
+fedora:
+  package_manager: dnf
+  install_cmd: "dnf install -y"
+  update_cmd: "dnf check-update"
+  upgrade_cmd: "dnf upgrade -y"

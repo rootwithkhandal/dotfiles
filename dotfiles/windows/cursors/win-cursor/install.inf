@@ -1,0 +1,56 @@
+[Information]
+Author		=	Vlad Sukhetskyi
+Website		=	https://www.deviantart.com/vladsukhetskyi
+
+[Version]
+Signature	=	"$Windows NT$"
+
+[DefaultInstall]
+CopyFiles	=	Scheme.Cur
+AddReg		=	Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur	=	10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%text%,%10%\%CUR_DIR%\%hand%,%10%\%CUR_DIR%\%unavailable%,%10%\%CUR_DIR%\%vert%,%10%\%CUR_DIR%\%horz%,%10%\%CUR_DIR%\%dgn1%,%10%\%CUR_DIR%\%dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%,%10%\%CUR_DIR%\%pin%,%10%\%CUR_DIR%\%person%"
+
+[Scheme.Cur]
+"vs_cursor_pointer.cur"
+"vs_cursor_help.cur"
+"vs_cursor_work.ani"
+"vs_cursor_busy.ani"
+"vs_cursor_cross.cur"
+"vs_cursor_text.cur"
+"vs_cursor_hand.cur"
+"vs_cursor_unavailable.cur"
+"vs_cursor_vert.cur"
+"vs_cursor_horz.cur"
+"vs_cursor_dgn1.cur"
+"vs_cursor_dgn2.cur"
+"vs_cursor_move.cur"
+"vs_cursor_alternate.cur"
+"vs_cursor_link.cur"
+"vs_cursor_pin.cur"
+"vs_cursor_person.cur"
+
+[Strings]
+CUR_DIR		=	"Cursors\VS Cursors 21.0"
+SCHEME_NAME	=	"VS Cursors 21.0"
+pointer		=	"vs_cursor_pointer.cur"
+help		=	"vs_cursor_help.cur"
+work		=	"vs_cursor_work.ani"
+busy		=	"vs_cursor_busy.ani"
+cross		=	"vs_cursor_cross.cur"
+text		=	"vs_cursor_text.cur"
+hand		=	"vs_cursor_hand.cur"
+unavailable	=	"vs_cursor_unavailable.cur"
+vert		=	"vs_cursor_vert.cur"
+horz		=	"vs_cursor_horz.cur"
+dgn1		=	"vs_cursor_dgn1.cur"
+dgn2		=	"vs_cursor_dgn2.cur"
+move		=	"vs_cursor_move.cur"
+alternate	=	"vs_cursor_alternate.cur"
+link		=	"vs_cursor_link.cur"
+pin		=	"vs_cursor_pin.cur"
+person		=	"vs_cursor_person.cur"

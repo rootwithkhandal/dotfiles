@@ -1,0 +1,14 @@
+# PowerShell generated files
+Modules/
+Scripts/
+
+# Editor backups
+*~
+*.swp
+*.swo
+*.bak
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store

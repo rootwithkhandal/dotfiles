@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/x_phantom/.config/bspwm/themes/default/wallpaper' 

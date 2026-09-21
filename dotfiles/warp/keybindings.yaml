@@ -1,0 +1,10 @@
+---
+"input:toggle_input_dispatch": none
+"ai_assistant_panel:focus_terminal_input": ctrl-shift-O
+"pane_group:add_left": ctrl-shift-J
+"notebookview:focus_terminal_input": ctrl-shift-O
+"workspace:toggle_ai_assistant": none
+"terminal:focus_input": ctrl-shift-O
+"pane_group:add_up": ctrl-shift-I
+"pane_group:add_down": ctrl-shift-K
+"pane_group:add_right": ctrl-shift-L

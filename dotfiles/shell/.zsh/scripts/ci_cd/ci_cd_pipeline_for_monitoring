@@ -1,0 +1,84 @@
+name: Infrastructure Monitoring Workflow
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * *" # Runs daily at midnight
+
+jobs:
+  monitoring:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout Code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set Up Python (for Log Parsing Script)
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      # Step 3: Disk Space Monitoring
+      - name: Disk Space Monitoring
+        run: |
+          df -h
+          DISK_USAGE=$(df / | tail -1 | awk '{print $5}' | sed 's/%//')
+          if [ "$DISK_USAGE" -ge 80 ]; then
+            echo "Disk usage is at $DISK_USAGE%. Alert: Disk space is low!"
+            exit 1
+          else
+            echo "Disk usage is at $DISK_USAGE%. Everything is fine."
+          fi
+
+      # Step 4: Service Uptime Check
+      - name: Check Service Uptime
+        run: |
+          SERVICE="https://your-service-url.com"
+          STATUS_CODE=$(curl -o /dev/null -s -w "%{http_code}\n" "$SERVICE")
+          if [ "$STATUS_CODE" -ne 200 ]; then
+            echo "Service is down with status code $STATUS_CODE."
+            exit 1
+          else
+            echo "Service is up and running."
+          fi
+
+      # Step 5: Log Parsing for Errors
+      - name: Parse Logs for Errors
+        run: |
+          LOG_FILE="application.log"
+          if grep -i "error" "$LOG_FILE"; then
+            echo "Errors found in the logs:"
+            grep -i "error" "$LOG_FILE"
+            exit 1
+          else
+            echo "No errors found in the logs."
+          fi
+
+      # Step 6: Email Notifications for Failures
+      - name: Send Email on Failure
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "🚨 Monitoring Workflow Failed!"
+          body: |
+            Hello,
+
+            The GitHub Actions monitoring workflow has failed. Please review the logs to address the issue.
+
+            - Workflow: Infrastructure Monitoring Workflow
+            - Repository: ${{ github.repository }}
+            - Branch: ${{ github.ref_name }}
+            - Time: ${{ github.run_started_at }}
+
+            Regards,
+            DevOps Team
+          to: your-email@example.com
+          from: monitoring@example.com
