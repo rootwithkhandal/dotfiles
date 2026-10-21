@@ -279,12 +279,6 @@
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
-                "guid": "{39ea5b63-20cf-5c9e-86c7-d103eee9e474}",
-                "hidden": false,
-                "name": "parrot",
-                "source": "Microsoft.WSL"
-            },
-            {
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": true,
                 "name": "Ubuntu",
