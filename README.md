@@ -29,6 +29,27 @@ sudo ./scripts/linux/linux-install.sh all
 sudo ./scripts/linux/linux-install.sh deps
 ```
 
+### Windows
+
+Run the Windows bootstrap directly from the repository:
+
+```powershell
+.\install.ps1
+```
+
+Or stream it from GitHub with PowerShell. The script clones the repository to
+a temporary directory when it is streamed, so repository-relative files still
+work:
+
+```powershell
+irm https://raw.githubusercontent.com/rootwithkhandal/dotfiles/main/install.ps1 | iex
+```
+
+Useful options include `-SkipPackages`, `-SkipModules`, `-SkipConfigs`,
+`-Security`, and `-WhatIf`. The `-Security` option applies system-wide
+firewall, SMB, LLMNR, and Remote Desktop settings and should only be used
+after reviewing the changes.
+
 ## What Gets Installed
 
 - **60+ Essential dependencies**: Build tools, Python stack, development libraries
