@@ -1,0 +1,24 @@
+name: khandal
+accent: "#9BB7D4"
+background: "#121316"
+foreground: "#ECEEF2"
+details: darker
+terminal_colors:
+  normal:
+    black: "#20232A"
+    blue: "#9BB7D4"
+    cyan: "#91B9BC"
+    green: "#94B49F"
+    magenta: "#A9A8BA"
+    red: "#DE8F8F"
+    white: "#C5C9D1"
+    yellow: "#DEC08B"
+  bright:
+    black: "#666D79"
+    blue: "#B1C9E1"
+    cyan: "#A8CDD0"
+    green: "#A8C9B0"
+    magenta: "#C0BFD0"
+    red: "#E9A6A6"
+    white: "#ECEEF2"
+    yellow: "#EBD09F"
